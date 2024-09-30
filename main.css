@@ -1,0 +1,506 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-regular, p, span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium, h2, h3, a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold, h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    background-color: #2C2C2C;
+    overflow-x: hidden;
+}
+
+.container {
+    align-items: center;
+    padding: 40px 32px;
+    display: grid;
+    gap: 24px;
+    justify-items: center;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "Header" "buttons" "Experience" "info";
+}
+
+
+.Header {
+    gap: 24px;
+    grid-area: Header;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: Experience;
+    gap: 24px;
+    max-width: 500px;
+}
+
+.exp-bar {
+    border-radius: 24px;
+    width: 300px;
+    height: 34px;
+    border: 1px solid #B3B3B3;
+}
+
+.exp-html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(90deg, #777CF4 2.62%, #F47777 93.28%);
+    width: 0;
+    height: 100%;
+    border-radius: 24px;
+    animation: load1 2s forwards 0.5s;
+    transition: width 2s ease-in-out;
+}
+
+.exp-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(90deg, #777CF4 2.62%, #F47777 93.28%);
+    width: 0;
+    height: 100%;
+    border-radius: 24px;
+    animation: load2 2s forwards 0.5s;
+    transition: width 2s ease-in-out;
+}
+
+.exp-js {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(90deg, #777CF4 2.62%, #F47777 93.28%);
+    width: 0;
+    height: 100%;
+    border-radius: 24px;
+    animation: load3 2s forwards 0.5s;
+    transition: width 2s ease-in-out;
+}
+
+.exp-pitao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(90deg, #777CF4 2.62%, #F47777 93.28%);
+    width: 0;
+    height: 100%;
+    border-radius: 24px;
+    animation: load4 2s forwards 0.5s;
+    transition: width 2s ease-in-out;
+}
+
+@keyframes load1 {
+    100% {
+        width: 100%;
+    }
+}
+
+
+@keyframes load2 {
+    100% {
+        width: 33%;
+    }
+}
+
+@keyframes load3 {
+    100% {
+        width: 90%;
+    }
+}
+
+
+@keyframes load4 {
+    100% {
+        width: 70%;
+    }
+}
+
+.exp-flex span {
+    color: white;
+}
+
+.exp-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    gap: 8px;
+}
+
+
+.experience-time {
+    flex-direction: column;
+    display: flex;
+}
+
+.Experience p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+    text-align: center;
+}
+
+.Experience img {
+    filter: grayscale(100%);
+    width: 40px;
+}
+
+.infos {
+    max-width: 500px;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    grid-area: info;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+
+.education {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+span {
+    color: #B3B3B3;
+}
+
+.Header img {
+    bottom: -50;
+    width: 325px;
+}
+
+.limit {
+    border-radius: 24px;
+    width: 325px;
+    height: 290px;
+    overflow: hidden;
+}
+
+.btn {
+    background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.28%);
+    border-radius: 24px;
+    width: 325px;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 2s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn {
+    transition: transform 0.3s ease-in-out; 
+}
+
+.btn img {
+    margin-left: 24px;
+    width: 20px;
+}
+
+.buttons img {
+    width: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+
+    grid-area: buttons;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+a {
+    width: 50px;
+    height: 50px;
+    padding: 8px;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: white;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #B3B3B3;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: white;
+}
+
+.list-html  {
+    height: 100%;
+    width: 100%;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+
+.container-projects {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 40px 32px;
+    justify-content: center;
+}
+
+.container-projects h1 {
+    margin-bottom: 32px;
+}
+
+.html {
+    flex-direction: column;
+    display: flex;
+    padding: 18px;
+    text-align: center;
+    background-color: #b3b3b33d;
+    border-radius: 24px;
+
+    width: 90%;
+}
+
+.item {
+    margin-bottom: 80px;
+}
+
+
+.box h3{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.html img {
+    width: 90%;
+}
+
+.ccg img {
+    width: 90%;
+}
+
+.ccg h3 {
+    margin: 24px;
+}
+
+
+.shadow {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.shadow:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.28%);
+    background-size: 200% 200%;
+    z-index: -1;
+    filter: blur(30px); 
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    border-radius: 30px; 
+}
+
+.shadow:hover:before {
+    opacity: 1; 
+}
+
+.borda {
+    display: flex;
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-div {
+    position: absolute;
+    bottom: -100%; 
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    height: 80%;
+    padding: 24px;
+    transition: bottom 0.5s ease;
+    text-align: center;
+    
+}
+
+.text-div a{
+    border: none;
+    width: 100%;
+    background: linear-gradient(90deg, #a6a8f7 2.62%, #f7a3a3 93.28%);
+    -webkit-background-clip: text; 
+    color: transparent;
+    text-decoration: underline;
+}
+
+.text-div p{
+color: white;
+}
+
+.bg:hover + .text-div {
+    bottom: 0;
+}
+
+.text-div:hover{
+    bottom: 0;
+}
+
+@media (min-width:769px) {
+    .container {
+        padding: 70px 60px;
+        grid-template-rows: fit-content(100%);
+        grid-template-columns: 60% 30%;
+        display: grid;
+        align-items: center;
+        justify-items: start;
+        justify-content: space-between;
+        grid-template-areas: "Header info" "Experience buttons" "nd2 nd";
+        }
+
+    .Experience {
+        align-items: flex-start;
+    }
+
+    .Experience-time {
+        grid-area: nd2;
+    }
+
+    .Experience p {
+        font-size: 24px;
+        line-height: 36px;
+        color: white;
+        text-align: start;
+    }
+
+    .Header {
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+
+    .limit {
+        border-radius: 100%;
+        width: 325px;
+        height: 320px;
+        border: 1px solid white;
+        overflow: hidden;
+    }
+
+
+    h1 {
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+
+    h2 {
+        font-size: 30px;
+        line-height: 45px;
+        font-style: normal;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 36px;
+        color: white;
+        text-align: start;
+    }
+
+    .list-html  {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 48px;
+    }
+
+    .ccg img {
+        width: 900px;
+    }
+
+    .html img {
+        width: 600px;
+    }
+}
