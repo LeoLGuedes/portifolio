@@ -414,7 +414,8 @@ h3 {
 }
 
 .text-div p{
-color: white;
+    display: none;
+    color: white;
 }
 
 .bg:hover + .text-div {
@@ -425,7 +426,12 @@ color: white;
     bottom: 0;
 }
 
-@media (min-width:769px) {
+@media (min-width:1438px) {
+    .text-div p{
+        display: block;
+        color: white;
+    }
+
     .container {
         padding: 70px 60px;
         grid-template-rows: fit-content(100%);
